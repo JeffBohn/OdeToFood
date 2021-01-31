@@ -1,1 +1,2 @@
-﻿
+﻿dotnet ef migrations add initialcreate -s ..\OdeToFood\OdeToFood.csproj
+dotnet ef database update -s ..\OdeToFood\OdeToFood.csproj
