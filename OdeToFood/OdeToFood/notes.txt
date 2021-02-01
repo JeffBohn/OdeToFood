@@ -1,2 +1,5 @@
 ﻿dotnet ef migrations add initialcreate -s ..\OdeToFood\OdeToFood.csproj
 dotnet ef database update -s ..\OdeToFood\OdeToFood.csproj
+
+
+Continue in Module 7 at "Implementing an API Controller"
