@@ -1,5 +1,13 @@
 ﻿dotnet ef migrations add initialcreate -s ..\OdeToFood\OdeToFood.csproj
 dotnet ef database update -s ..\OdeToFood\OdeToFood.csproj
 
+Module 7:  Integrating Client-side JavaScript and CSS
+Clip "Implementing an API Controller" explains that with
+ASP.NET Core 3 or higher
+See readme file at
+https://github.com/OdeToCode/OdeToFood
+for configuration changes you need to make.
+The changes are listed under the heading "Module 7".
 
-Continue in Module 7 at "Implementing an API Controller"
+[7] Integrating Client-side JavaScript and CSS
+Continue at "Using DataTables".
