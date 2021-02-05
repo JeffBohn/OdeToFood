@@ -10,4 +10,8 @@ for configuration changes you need to make.
 The changes are listed under the heading "Module 7".
 
 [7] Integrating Client-side JavaScript and CSS
-Continue at "Using DataTables".
+Continue at "Managing Client Clibraries using npm and NodeJS
+https://datatables.net/download/
+NPM link
+Install it
+The course is going to assume I have NPM installed.
