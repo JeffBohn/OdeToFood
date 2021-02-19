@@ -6,9 +6,16 @@
 
 <h2>Client Restaurants</h2>
 
+<table class="table" id="restaurants">
+
+</table>
+
 @section Scripts {
 
     <environment include="Development">
+        <script src="~/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/node_modules/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+        <link href="~/node_modules/datatables.net-bs/css/dataTables.bootstrap.css" rel="stylesheet" />
     </environment>
 
     <environment exclude="Development">
@@ -18,10 +25,34 @@
 
         <script>
             $(function () {
+
+                // Scott Allen, Pluralsight instructor says the proper way to get the
+                // cuisines enum to display as the string values rather than a number
+                // would be to serialize the enum back to the client.  Directly below
+                // is hard coding he said he was going to do for now just to get it to work.
+                // "You might make an API call to get these values instead of hard coding..."
+
+                var cuisines = ["Unknown", "Mexican", "Italian", "Indian"]
+
                 $.ajax("/api/restaurants",
                     { method: "get" })
                     .then(function (response) {
-                        console.dir(response);
+                        //console.dir(response);
+                        $("#restaurants").dataTable({
+                            data: response,
+                            columns: [
+                                { "data": "name" },
+                                { "data": "location" },
+                                {
+                                    "data": "cuisine",
+                                    "render": function (data)
+                                    {
+                                        return cuisines[data];
+                                    }
+                                }
+                            ]
+                        })
+
                     });
             });
         </script>

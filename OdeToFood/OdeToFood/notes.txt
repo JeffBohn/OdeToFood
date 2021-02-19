@@ -9,9 +9,19 @@ https://github.com/OdeToCode/OdeToFood
 for configuration changes you need to make.
 The changes are listed under the heading "Module 7".
 
-[7] Integrating Client-side JavaScript and CSS
-Continue at "Managing Client Clibraries using npm and NodeJS
+Bookmark:
+[8] Working with the Internals of ASP.NET Core
+
 https://datatables.net/download/
-NPM link
-Install it
-The course is going to assume I have NPM installed.
+Styling Framework:  Bootstrap 3
+Packages:  DataTables
+
+npm init    to create package.json
+npm install --save datatables.net-bs       per https://datatables.net/download/
+In package.json, instructor removed everything from description thru license.
+
+jquery and bootstrap got placed by the project template into wwwroot folder.
+should be from npm...
+npm install jquery
+npm install bootstrap
+learn more about npm

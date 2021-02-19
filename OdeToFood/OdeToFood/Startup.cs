@@ -62,7 +62,8 @@ namespace OdeToFood
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); // middleware.  wwwroot
+            app.UseNodeModules(env); // Scott Allen middleware to search beyond wwwroot
             app.UseCookiePolicy();
 
             app.UseMvc();
