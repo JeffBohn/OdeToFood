@@ -10,7 +10,7 @@ for configuration changes you need to make.
 The changes are listed under the heading "Module 7".
 
 Bookmark:
-[8] Working with the Internals of ASP.NET Core
+[9] Deploying ASP.NET Core Web Applications.
 
 https://datatables.net/download/
 Styling Framework:  Bootstrap 3
